@@ -4,7 +4,7 @@ const name = document.getElementById('floatingInput1');
 const email = document.getElementById('floatingInput2');
 const btn = document.getElementById('btn');
 
-const URL = 'http://localhost:3000/';
+const URL = 'http://localhost:3000/newsletter';
 
 
 
