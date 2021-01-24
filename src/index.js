@@ -3,10 +3,12 @@ import style from "./css/index.scss"
 const name = document.getElementById('floatingInput1');
 const email = document.getElementById('floatingInput2');
 const btn = document.getElementById('btn');
-
+const afterWindow = document.getElementById('after');
+const okBtn = document.getElementById('Okbtn');
 const URL = 'http://localhost:3000/newsletter';
 
-
+ 
+ afterWindow.style.display="none";
 
 btn.addEventListener('click', e=>{
     e.preventDefault();
@@ -14,7 +16,7 @@ btn.addEventListener('click', e=>{
         name: name.value,
         email: email.value
     }
-    fetch(URL, {
+     fetch(URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -27,10 +29,19 @@ btn.addEventListener('click', e=>{
             name.value = '',
             email.value = ''
         )
+        .then(
+            afterWindow.style.display="flex"
+        )
         .catch(err=> {
             console.log('Error: ', err )
         })
 
+        
+    
 });
+
+okBtn.addEventListener('click', ()=>{
+   afterWindow.style.display="none";
+})
 
 
