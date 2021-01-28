@@ -8,24 +8,33 @@
     <title>Newsletter</title>
 </head>
 <body>
-    <h3>Newletter Sign Up</h3>
-    <img src="pic.jpg" alt="pic">
+    <!-- <div id="img"></div> -->
+    <h3>Newsletter Sign Up</h3>
+  
     <form>
-        
+
         <div id="form-container"> 
+            <h4>Design News!</h4>
+            <h5>Sign up to be up to date with the newest design concepts!</h5><br>
+
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="name">
+                <input type="text" class="form-control" id="floatingInput1" placeholder="name">
                 <label for="floatingInput">Name</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="email" class="form-control" id="floatingInput2" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
             </div>
 
-
-            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit" id="btn">
         </div>
     </form>
+
+    <div class="after-window" id="after">
+        <h4>Thank you!</h4><br>
+        <h5>You've been subscribed to our Newsletter!</h5><br>
+        <input class="btn btn-primary" type="submit" value="Ok" id="Okbtn">
+    </div>
 
 <script type="text/javascript" src="bundle.js"></script></body>
 </html>

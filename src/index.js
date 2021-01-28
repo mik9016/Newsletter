@@ -5,7 +5,7 @@ const email = document.getElementById('floatingInput2');
 const btn = document.getElementById('btn');
 const afterWindow = document.getElementById('after');
 const okBtn = document.getElementById('Okbtn');
-const URL = 'http://localhost:3000/newsletter';
+const URL = 'https://newsletter-mikgru.herokuapp.com/';
 
  
  afterWindow.style.display="none";
